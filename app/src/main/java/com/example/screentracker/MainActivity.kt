@@ -146,6 +146,7 @@ fun MainScreen(cachedLog: State<List<String>>) {
                     // Highlight the log entry if it's selected
                     Text(
                         text = logEntry,
+                        color = Color.White,
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
@@ -192,7 +193,8 @@ fun MainScreen(cachedLog: State<List<String>>) {
         Spacer(modifier = Modifier.height(8.dp))
 
         val formattedSleepDuration = formatDurationInSecondsToHHMMSS(totalSleepDurationInSeconds.longValue)
-        Text(text = "Total Sleep Duration: $formattedSleepDuration")
+        Text(text = "Total Sleep Duration: $formattedSleepDuration",
+            color = Color.White)
     }
 }
 
